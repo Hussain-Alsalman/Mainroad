@@ -24,12 +24,21 @@
 	<link rel="dns-prefetch" href="//fonts.gstatic.com">
 	<link rel="stylesheet" {{ printf `href="%s"` $googleFontsLink | safeHTMLAttr }}>
 	{{- end }}
+    
+    {{- if eq .Language.Lang "ar" }}
+        {{ $style := resources.Get "css/stylertl.css" | resources.ExecuteAsTemplate "css/stylertl.css" . -}}
+        <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    {{- end}}
 
-	{{ $style := resources.Get "css/style.css" | resources.ExecuteAsTemplate "css/style.css" . -}}
-	<link rel="stylesheet" href="{{ $style.RelPermalink }}">
-	{{ range .Site.Params.customCSS -}}
+    {{- if eq .Language.Lang "en" }}
+        {{ $style := resources.Get "css/style.css" | resources.ExecuteAsTemplate "css/style.css" . -}}
+	    <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    {{- end}}
+
+    <!-- 
+   	{{ range .Site.Params.customCSS -}}
 	<link rel="stylesheet" href="{{ . | relURL }}">
-	{{- end }}
+	{{- end }} -->	
 
 	{{- with .OutputFormats.Get "rss" }}
 	{{ printf `<link rel="%s" type="%s" href="%s" title="%s">` .Rel .MediaType.Type .RelPermalink $.Site.Title | safeHTML }}
