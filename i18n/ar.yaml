@@ -1,0 +1,94 @@
+# General
+- id: read_more
+  translation: "أقرأ المزيد..."
+
+- id: menu_label
+  translation: "القائمة"
+
+- id: sidemenu_title
+  translation: "القائمة"
+
+# Post meta
+- id: meta_lastmod
+  translation: "آخر تعديل"
+
+- id: meta_translations
+  translation: "ترجمة"
+
+# Table of Contents
+- id: toc_title
+  translation: "محتوى الصفحة"
+
+# Post nav
+- id: post_nav_prev
+  translation: "السابق"
+
+- id: post_nav_next
+  translation: "اللاحق"
+
+# Authorbox
+- id: authorbox_name
+  translation: "عن {{ .Name }}"
+
+# Sidebar
+- id: sidebar_warning
+  translation: "تحذير"
+
+- id: sidebar_recommendation
+  translation: "الرجاء قم بتفعيل واحد من العناصر في القائمة الجانبية"
+
+# Search widget
+- id: search_placeholder
+  translation: "بحث..."
+
+# Languages widget
+- id: languages_title
+  translation: "لغات"
+
+# Categories widget
+- id: categories_title
+  translation: "التصنيفات"
+
+# Recent Posts widget
+- id: recent_title
+  translation: "آخر المشاركات"
+
+# Social widget
+- id: social_title
+  translation: "تواصل"
+
+# Tags List widget
+- id: tags_title
+  translation: "العلامات"
+
+# Footer
+- id: footer_credits
+  translation:
+    "تم إنشاؤها بواسطة  <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> and \
+    <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a> theme."
+
+# 404
+- id: 404_title
+  translation: "404. الصفحة غير موجودة"
+
+- id: 404_text
+  translation:
+    "يبدو أن الصفحة التي كنت تبحث عنها قد تم نقلها أو حذفها أو أنها غير موجودة. من فضلك ، استخدم البحث أو انتقل إلى"
+
+- id: 404_linktext
+  translation: "الصفخة الرئيسية"
+
+# No posts empty state
+- id: noposts_warning_title
+  translation: "ليس لديك أي مشاركات بعد! "
+
+- id: noposts_warning_description
+  translation:
+    "بمجرد نشر شيء ما في أي مجلد (section) ضمن دليل <b> content </b> ، سيظهر هنا.
+     سيتم عرض قسم واحد فقط (الذي يحتوي على أكبر عدد من المشاركات) على الصفحة الرئيسية بشكل افتراضي."
+
+- id: noposts_warning_tip
+  translation:
+    "<b>Tip:</b> يمكنك إظهار أي عدد تريده من الأقسام  \
+    <b><a href=\"https://gohugo.io/functions/where/#mainsections\" rel=\"nofollow noopener\" target=\"_blank\">mainSections</a></b> \
+    config parameter."
