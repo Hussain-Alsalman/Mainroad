@@ -1,8 +1,6 @@
 {{- if .Param "authorbox" }}
-    {{ $author := index .Site.Data.authors ( .Param.author | defualt "guest" ) }}
-    {{- if $author -}}
+{{- $author := index .Site.Data.authors (.Params.author | default "default") -}}
 <div class="authorbox clearfix">
-
 	{{- with $author.avatar }}
 	<figure class="authorbox__avatar">
 		<img alt="{{  $author.name }} avatar" src="{{ $author.avatar | relURL }}" class="avatar" height="90" width="90">
@@ -19,5 +17,4 @@
 	</div>
 	{{- end }}
 </div>
-{{- end }}
 {{- end }}
