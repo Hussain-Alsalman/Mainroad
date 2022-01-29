@@ -67,6 +67,14 @@
     "تم إنشاؤها بواسطة  <a href=\"https://gohugo.io/\" rel=\"nofollow noopener\" target=\"_blank\">Hugo</a> and \
     <a href=\"https://github.com/Vimux/Mainroad/\" rel=\"nofollow noopener\" target=\"_blank\">Mainroad</a> theme."
 
+# Subscription
+- id: subscribe
+  translation: "قائمة المراسلات"
+
+- id: subscribe_messege
+  translation: "للحصول على آخر المستجدات في موقعنا, قم بالأشتراك في قائمة المراسلات"
+
+
 # 404
 - id: 404_title
   translation: "404. الصفحة غير موجودة"

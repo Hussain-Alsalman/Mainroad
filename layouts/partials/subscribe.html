@@ -1,0 +1,6 @@
+{{ if and (.Site.Params.subscribe) (ne .Site.Params.tinyletter nil) }}
+<div class="comments">
+<h3>{{- T "subscribe" }}</h3>
+<p><a href={{- .Site.Params.tinyletter }}>{{- T "subscribe_messege" }}</a></p>
+</div>
+{{ end }}
